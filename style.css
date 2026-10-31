@@ -1,0 +1,15 @@
+:root { --bg: #E9E7E2; --ink: #1A1A18; --accent: #F0782A; --muted: #5F5D57; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1A1A18; --ink: #E9E7E2; --muted: #A8A59D; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.8 "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.brand { font-weight: 700; letter-spacing: .08em; margin: 0 0 32px; }
+.brand a { text-decoration: none; }
+h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 16px; }
+h2 { font-size: 1.1rem; margin: 32px 0 8px; border-left: 4px solid var(--accent); padding-left: 10px; }
+.meta { color: var(--muted); font-size: .9rem; }
+dt { font-weight: 700; margin-top: 12px; }
+dd { margin: 0 0 0 1em; }
+.links { padding: 0; list-style: none; display: flex; gap: 24px; }
+.button { display: inline-block; background: var(--accent); color: #1A1A18; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; }
